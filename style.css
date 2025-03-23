@@ -1,55 +1,53 @@
-/* Professional Styles for Montero Express */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Importar fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-General styles */
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-/* Header styles */
+/* Estilos del encabezado */
 header {
-    background-color: #0078d7;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: linear-gradient(to right, #004d40, #00796b);
+    padding: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button styles */
-button {
-    background-color: #0078d7;
-    color: white;
+/* Navbar */
+.navbar {
+    background-color: #00796b;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* Contenedor principal */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de servicios */
+.list-group-item {
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e0f2f1;
 }
 
-button:hover {
-    background-color: #005bb5;
-}
-
-/* Card styles */
-.card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-}
-
-/* Footer styles */
+/* Pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: linear-gradient(to right, #004d40, #00796b);
+    padding: 15px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
 }
