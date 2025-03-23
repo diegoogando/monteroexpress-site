@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montero Express Logistics</title>
+    
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="bg-success text-white text-center py-4">
+    <!-- Encabezado -->
+    <header class="text-white text-center py-4 bg-success">
         <h1>Montero Express Logistics</h1>
         <p>Soluciones logísticas rápidas y confiables</p>
     </header>
 
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Inicio</a>
@@ -23,40 +30,83 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Quiénes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Visión y Misión</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quienesSomos">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#misionVision">Visión y Misión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="container my-5">
-        <h2>Quiénes Somos</h2>
-        <p>Somos una empresa especializada en logística y transporte de mercancías en todo el país.</p>
+    <!-- Sección de Servicios -->
+    <section class="container my-5" id="servicios">
+        <h2 class="text-center">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?delivery" alt="Envío de Paquetes" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Envío de Paquetes</h5>
+                        <p class="card-text">Transporte rápido y seguro de tus envíos a cualquier parte del país.</p>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Visión y Misión</h2>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?warehouse" alt="Gestión de Inventarios" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Inventarios</h5>
+                        <p class="card-text">Manejo eficiente de tus productos con tecnología avanzada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?truck" alt="Distribución Nacional" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Distribución Nacional</h5>
+                        <p class="card-text">Cobertura completa en todo el país con logística optimizada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section class="container my-5" id="quienesSomos">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Quiénes Somos</h2>
+                <p>Somos una empresa especializada en logística y transporte de mercancías con el compromiso de ofrecer soluciones eficientes y seguras.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/600x400/?logistics,team" alt="Nuestro Equipo" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Visión y Misión -->
+    <section class="container my-5" id="misionVision">
+        <h2 class="text-center">Visión y Misión</h2>
         <p><strong>Visión:</strong> Convertirnos en la empresa de logística más confiable de la región.</p>
-        <p><strong>Misión:</strong> Ofrecer soluciones de transporte eficientes y seguras.</p>
+        <p><strong>Misión:</strong> Ofrecer soluciones de transporte eficientes y seguras con innovación y compromiso.</p>
+    </section>
 
-        <h2>Servicios</h2>
-        <ul>
-            <li>Envío de paquetes</li>
-            <li>Gestión de inventarios</li>
-            <li>Distribución nacional</li>
-            <li>Distribución internacional</li>
-        </ul>
-
-        <h2>Contacto</h2>
+    <!-- Contacto -->
+    <section class="container my-5" id="contacto">
+        <h2 class="text-center">Contacto</h2>
         <p>Email: contacto@monteroexpress.com</p>
         <p>Teléfono: +1 829-982-5968</p>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-success text-white text-center py-3">
         <p>&copy; 2025 Montero Express Logistics. Todos los derechos reservados.</p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
