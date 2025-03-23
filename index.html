@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montero Express Logistics</title>
-    
-    <!-- Estilos personalizados -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Fonts -->
@@ -43,35 +43,35 @@
     <section class="container my-5" id="servicios">
         <h2 class="text-center">Nuestros Servicios</h2>
         <div class="row">
-            <div class="col-md-4">
+            <article class="col-md-4">
                 <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?delivery" alt="Envío de Paquetes" class="card-img-top">
+                    <img src="images/envio_paquetes.jpg" alt="Envío de Paquetes" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Envío de Paquetes</h5>
                         <p class="card-text">Transporte rápido y seguro de tus envíos a cualquier parte del país.</p>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="col-md-4">
+            <article class="col-md-4">
                 <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?warehouse" alt="Gestión de Inventarios" class="card-img-top">
+                    <img src="images/inventario.jpg" alt="Gestión de Inventarios" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Gestión de Inventarios</h5>
                         <p class="card-text">Manejo eficiente de tus productos con tecnología avanzada.</p>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="col-md-4">
+            <article class="col-md-4">
                 <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?truck" alt="Distribución Nacional" class="card-img-top">
+                    <img src="images/distribucion.jpg" alt="Distribución Nacional" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Distribución Nacional</h5>
                         <p class="card-text">Cobertura completa en todo el país con logística optimizada.</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -83,7 +83,7 @@
                 <p>Somos una empresa especializada en logística y transporte de mercancías con el compromiso de ofrecer soluciones eficientes y seguras.</p>
             </div>
             <div class="col-md-6">
-                <img src="https://source.unsplash.com/600x400/?logistics,team" alt="Nuestro Equipo" class="img-fluid rounded shadow">
+                <img src="images/equipo.jpg" alt="Nuestro Equipo" class="img-fluid rounded shadow">
             </div>
         </div>
     </section>
@@ -107,7 +107,19 @@
         <p>&copy; 2025 Montero Express Logistics. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
