@@ -16,35 +16,44 @@ header {
 }
 
 /* Navbar */
+/* Estilos de la barra de navegación mejorada */
 .navbar {
-    background-color: #1e90ff; /* Cambiado a azul claro */
+    background: linear-gradient(to right, #004d40, #00796b) !important; /* Degradado elegante */
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
-.navbar .navbar-brand, .navbar .nav-link {
+.navbar .navbar-brand {
     color: white !important;
     font-weight: bold;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
 }
 
 .navbar .nav-link:hover {
-    color: #ffcc00 !important; /* Cambiado a amarillo */
+    color: #ffcc00 !important; /* Amarillo dorado */
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
 }
 
-/* Contenedor principal */
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Lista de servicios */
-.list-group-item {
+/* Botón del menú en móviles */
+.navbar-toggler {
     border: none;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #e9ecef; /* Cambiado a un gris claro */
 }
 
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Icono blanco */
+}
 /* Pie de página */
 footer {
     background: linear-gradient(to right, #0d6efd, #6610f2); /* Cambiado a un degradado de azul */
